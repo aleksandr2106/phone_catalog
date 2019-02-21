@@ -1,0 +1,17 @@
+.product_item {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.product_item_img {
+  float: left;
+}
+
+.product_item_name {
+  text-align: center;
+}
+
+.product_item_snippet {
+  color: grey;
+  text-align: center;
+}
