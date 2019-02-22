@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div>
         <Route path="/" component={ProductList} exact />
-        <Route path="/:product" component={Product} />
+        <Route path="/:product" component={Product} exact />
       </div>
     );
   }
