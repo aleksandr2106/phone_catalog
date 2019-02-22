@@ -4,13 +4,10 @@ import './ProductItem.css';
 class ProductItem extends Component {
   render() {
     const { imageUrl, name, snippet } = this.props;
-    let phone_img_link = 'http://localhost:3000/';
-    phone_img_link += imageUrl;
-    console.log(phone_img_link);
 
     return (
       <div className="product_item">
-        <img className="product_item_img" src={phone_img_link} alt={name} />
+        <img className="product_item_img" src={imageUrl} alt={name} />
         <div className="info_about_phone">
           <a href="#" className="product_item_name">
             {name}
