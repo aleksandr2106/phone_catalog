@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import "./ProductItem.css";
+import React, { Component } from 'react';
+import './ProductItem.css';
 
 class ProductItem extends Component {
   render() {
-    const { phone_img, name, snippet } = this.props;
-    var phone_img_link = "http://localhost:3000/";
-    phone_img_link += phone_img;
+    const { imageUrl, name, snippet } = this.props;
+    let phone_img_link = 'http://localhost:3000/';
+    phone_img_link += imageUrl;
     console.log(phone_img_link);
 
     return (
