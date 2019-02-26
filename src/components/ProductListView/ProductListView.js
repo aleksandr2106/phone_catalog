@@ -25,6 +25,8 @@ class ProductList extends Component {
       case 'newest': {
         return first.age - second.age;
       }
+      default:
+        return first.age - second.age;
     }
   };
   render() {
@@ -67,9 +69,11 @@ class ProductList extends Component {
             )
             .map(phoneList => (
               <ProductItem
+                key={phoneList.id}
                 imageUrl={phoneList.imageUrl}
                 name={phoneList.name}
                 snippet={phoneList.snippet}
+                id={phoneList.id}
               />
             ))}
         </div>
