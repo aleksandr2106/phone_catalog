@@ -1,0 +1,32 @@
+.description_and_gallary {
+  margin-bottom: 150px;
+}
+
+.select_img {
+  float: left;
+  position: relative;
+  max-width: 350px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.description_photo h1 {
+  position: relative;
+}
+
+.gallery_img {
+  max-width: 100px;
+  max-height: auto;
+  padding: 10px;
+  border: 1px solid #000;
+  margin: 20px;
+}
+
+.full_description {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}

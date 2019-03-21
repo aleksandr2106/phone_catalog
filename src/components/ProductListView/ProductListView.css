@@ -1,4 +1,22 @@
 .product_list_view {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.product_list {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.input_filter,
+.product_sort {
+  display: flex;
+  font-size: 22px;
+}
+
+.input_filter input,
+.product_sort select {
+  max-height: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
